@@ -110,6 +110,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\AboutPoland\Aisti.png" />
+    <Content Include="images\AboutPoland\Apple.png" />
+    <Content Include="images\AboutPoland\bigos.png" />
+    <Content Include="images\AboutPoland\BISNESS.jpg" />
+    <Content Include="images\AboutPoland\dvorecKulturi.png" />
+    <Content Include="images\AboutPoland\Gdansk.png" />
+    <Content Include="images\AboutPoland\Gurek.png" />
+    <Content Include="images\AboutPoland\Karp.png" />
+    <Content Include="images\AboutPoland\konstituciy.png" />
+    <Content Include="images\AboutPoland\Kopernik.png" />
+    <Content Include="images\AboutPoland\Krakov.png" />
+    <Content Include="images\AboutPoland\Kvas.png" />
+    <Content Include="images\AboutPoland\PolandZamki.png" />
+    <Content Include="images\AboutPoland\Polyane.png" />
+    <Content Include="images\AboutPoland\Poznan.png" />
+    <Content Include="images\AboutPoland\reki.png" />
+    <Content Include="images\AboutPoland\torun.png" />
+    <Content Include="images\AboutPoland\Varshava.png" />
+    <Content Include="images\AboutPoland\ViniPuh.png" />
+    <Content Include="images\AboutPoland\Wroclav.png" />
+    <Content Include="images\AboutPoland\yabloko.png" />
+    <Content Include="images\AboutPoland\Yantar.png" />
+    <Content Include="images\AboutPoland\Zlotiy.png" />
+    <Content Include="images\VNG_PMG_Work_Educ\business.jpg" />
+    <Content Include="images\VNG_PMG_Work_Educ\education.png" />
+    <Content Include="images\VNG_PMG_Work_Educ\family.jpg" />
+    <Content Include="images\VNG_PMG_Work_Educ\Nauka.jpg" />
+    <Content Include="images\VNG_PMG_Work_Educ\NoZayvlenie.png" />
+    <Content Include="images\VNG_PMG_Work_Educ\polskaPMG.png" />
     <Content Include="packages.config" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
@@ -119,6 +148,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Home\VNGPoland.cshtml" />
+    <Content Include="Views\Home\PMGPoland.cshtml" />
+    <Content Include="Views\Home\EducationPoland.cshtml" />
+    <Content Include="Views\Home\WorkPoland.cshtml" />
+    <Content Include="Views\Home\WhyPoland.cshtml" />
+    <Content Include="Views\Home\Contacts.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -177,7 +212,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="images\AboutPoland\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

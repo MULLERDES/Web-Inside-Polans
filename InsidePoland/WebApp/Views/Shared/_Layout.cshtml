@@ -34,18 +34,19 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
+                    <li>@Html.ActionLink("Главная", "Index", "Home", new { area = "" }, new { }) </li>
                     <li>@Html.ActionLink("О польше", "AboutPoland", "Home", new { area = "" }, new {  }) </li>
-                    <li><a href="#">Образование</a></li>
-                    <li><a href="#">Работа</a></li>
+                    <li>@Html.ActionLink("Образование", "EducationPoland", "Home", new { area = "" }, new { })</li>
+                    <li>@Html.ActionLink("Работа", "WorkPoland", "Home", new { area = "" }, new { })</li>
 
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Иммиграция<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Вид на жительство ВНЖ</a></li>
-                            <li><a href="#">Постоянное место жительство ПМЖ</a></li>
+                            <li> @Html.ActionLink(" Вид на жительство в Польше", "VNGPoland", "Home", new { area = "" }, new { }) </li>
+                            <li>@Html.ActionLink(" Постоянное место жительства в Польше", "PMGPoland", "Home", new { area = "" }, new { }) </li>
                         </ul>
                     </li>
-                    <li><a href="#">Контакты</a></li>
+                    <li>@Html.ActionLink(" Контакты", "Contacts", "Home", new { area = "" }, new { })</li>
                 </ul>
                 @*<ul class="nav navbar-nav navbar-right">
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
