@@ -2,6 +2,7 @@
     /*padding-top: 50px;*/
     padding-bottom: 20px;
     line-height: initial;
+    color: gray;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,7 +22,7 @@ textarea {
     background-image: url('../images/index/bg/mainbg.png');
     height: 100px;
     margin-bottom: -100px;
-    background-size:100% 100px;
+    background-size: 100% 100px;
 }
 
 
@@ -52,6 +53,12 @@ textarea {
         text-decoration: none;
     }
 
+.MFooter {
+    display: none;
+    background-color: #132434;
+    height: 30px;
+}
+
 @media screen and (min-width: 768px) {
 
     .body-content {
@@ -61,11 +68,53 @@ textarea {
     .MHeader {
         height: 300px;
         margin-bottom: -250px;
-        background-size:100% 300px;
+        background-size: 100% 300px;
+    }
+
+    .MFooter {
+        display: block;
+        height: 160px;
+    }
+
+    .sidemenu {
+        background-color: #132434;
+        color: white;
+        font-size: 1.2em;
+        padding: 35px;
     }
 }
 
+    .ZagolovokColor {
+        color: #2a0202;
+    }
 
-.sidemenu a {
-    color: white;
-}
+    .buttonBlue {
+        background-color: #132434;
+        color: white;
+    }
+
+    .buttonBlue1 {
+        background-color: #132434;
+        color: white;
+        margin-top: 12px;
+    }
+
+ .MFooter   ul{
+        list-style:none;
+        padding-left:0px;
+    }
+ .MFooter a{
+     color: rgb(163, 178, 178);
+  
+ }
+ .MFooter li{
+     margin-top:15px;
+ }
+ .MFooter h4{
+     color:#dddcdc;
+     margin-top:20px;
+ }
+
+    .hercontainer a{
+        color:#2a0202;
+    }

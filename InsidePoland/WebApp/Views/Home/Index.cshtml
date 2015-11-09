@@ -2,6 +2,7 @@
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.kwords = "Оформление ВНЖ в Польше, ПМЖ в Польше недорого, Оформление ВНЖ в Киеве, пребывание в Польше ";
 }
 
 
@@ -29,41 +30,41 @@
     <div class="col-sm-4">
         <div class="row">
             <div class="container">
-                <h3>ВНЖ В ПОЛЬШЕ</h3>
+                <h3 class="ZagolovokColor">ВНЖ В ПОЛЬШЕ</h3>
                 <img class="img-rounded img-index-preview" src="~/images/index/smallimg/kartaPMG.png" />
                 <p>
                     Вид на жительство или разрешение на временное проживание – это документ, подтверждающий право на проживание, обучение, работу и ведение хозяйственной деятельности в Польше.
                 </p>
-                <button type="button" class="btn btn-primary">Дополнительно</button>
+                @Html.ActionLink("Подробнее", "VNGPoland", "Home", new { area = "" }, new { @class = "btn buttonBlue" })
             </div>
         </div>
     </div>
     <div class="col-sm-4">
         <div class="row">
             <div class="container">
-                <h3>ПМЖ В ПОЛЬШЕ</h3>
+                <h3 class="ZagolovokColor">ПМЖ В ПОЛЬШЕ</h3>
                 <img class="img-rounded img-index-preview" src="~/images/index/smallimg/kartaPMG2.png" />
                 <p>
                     Разрешение на постоянное проживание в стране принято сокращенно называть «ПМЖ». Этот документ дает право жить и работать в Польше практически наравне с польскими гражданами.
                 </p>
-                <button type="button" class="btn btn-primary">Дополнительно</button>
+                @Html.ActionLink("Подробнее", "PMGPoland", "Home", new { area = "" }, new { @class = "btn buttonBlue" })
             </div>
         </div>
     </div>
     <div class="col-sm-4  ">
         <div class="container">
-            <h3> НАШИ УСЛУГИ</h3>
-            <ul class="list-group sidemenu ">
-                <li class="list-group-item active"><a href="#">Ссылки</a></li>
-                <li class="list-group-item active"><a href="#">Ссылки</a></li>
-                <li class="list-group-item active"><a href="#">Ссылки</a></li>
-                <li class="list-group-item active"><a href="#">Ссылки</a></li>
-                <li class="list-group-item active"><a href="#">Ссылки</a></li>
-                <li class="list-group-item active"><a href="#">Ссылки</a></li>
-
-
+            <h3 class="ZagolovokColor"> НАШИ УСЛУГИ</h3>
+            <ul class="sidemenu ">
+                <li> профессиональные консультации на всех этапах процесса </li>
+                <li> подготовку полного пакета документов</li>
+                <li> сопровождение при подаче документов</li>
+                <li> услуги юриста и переводчика</li>
+                <li> регистрация фирм</li>
+                <li> помощь в поступлении</li>
             </ul>
+            @*@Html.ActionLink("Галерея", "", "Home", new { area = "" }, new { @class = "btn buttonBlue1" })*@
         </div>
+        
     </div>
 </div>
 
@@ -73,13 +74,27 @@
         <div id="Stage" class="EDGE-268858262" style="margin:10px;">
         </div>
          
-        @Html.ActionLink("Почему Польша", "WhyPoland", "Home", new { area = "" }, new { @class="btn btn-primary" })
+        @Html.ActionLink("Почему Польша?", "WhyPoland", "Home", new { area = "" }, new { @class = "btn buttonBlue" })
     </div>
-    <div class="col-sm4">
-        
-    </div>
-</div>
+    <div class="col-sm-4 hidden-sm">
+        <div class="container hercontainer">
+            <h3 class="ZagolovokColor">О ПОЛЬШЕ</h3>
+            <div >
+                <p>@Html.ActionLink("О польше", "AboutPoland", "Home", new { area = "" }, new { })</p>
+                <p>@Html.ActionLink("Города Польши", "AboutPoland", "Home", null, null, "City", null, null) </p>
+                <p>@Html.ActionLink("Национальная кухня", "AboutPoland", "Home", null, null, "Kuhny", null, null)</p>
+                <p>@Html.ActionLink("Интересные факты", "AboutPoland", "Home", null, null, "Fakts", null, null)</p>
+                <p>@Html.ActionLink("Валюта Польши", "AboutPoland", "Home", null, null, "Valuta", null, null)</p>
+                
 
+            </div> 
+        </div>
+       
+
+        </div>
+       
+</div>
+ 
 
 
 

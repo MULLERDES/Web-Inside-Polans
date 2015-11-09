@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-
+    <meta name="keywords" itemprop="keywords" content="@ViewBag.kwords" />
+    <meta name="description" itemprop="description" content="ВНЖ и ПМЖ, работа и образование в Польше для Украинцев - оформление, получение, низкая цена 044-360-50-08">
 
 
     @Styles.Render("~/Content/css")
@@ -35,7 +36,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>@Html.ActionLink("Главная", "Index", "Home", new { area = "" }, new { }) </li>
-                    <li>@Html.ActionLink("О польше", "AboutPoland", "Home", new { area = "" }, new {  }) </li>
+                    <li>@Html.ActionLink("О польше", "AboutPoland", "Home", new { area = "" }, new { }) </li>
                     <li>@Html.ActionLink("Образование", "EducationPoland", "Home", new { area = "" }, new { })</li>
                     <li>@Html.ActionLink("Работа", "WorkPoland", "Home", new { area = "" }, new { })</li>
 
@@ -61,9 +62,46 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+
+    </div>
+
+    <div class="MFooter ">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4>ИММИГРАЦИЯ</h4>
+                    <hr />
+                    <ul class="style1">
+                        <li class="first">@Html.ActionLink("Постоянное пребывание", "PMGPoland", "Home", new { area = "" }, new { })</li>
+                        <li>@Html.ActionLink("Временное пребывание", "VNGPoland", "Home", new { area = "" }, new { })</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h4>ОБРАЗОВАНИЕ</h4>
+                    <hr />
+                    <ul class="style1">
+                        <li class="first">@Html.ActionLink("Учеба в ВУЗе", "EducationPoland", "Home", new { area = "" }, new { })</li>
+                        <li>@Html.ActionLink("Научная деятельность", "EducationPoland", "Home", null, null, "Nauka", null, null)</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h4>РАБОТА</h4>
+                    <hr />
+                    <ul class="style1">
+                        <li class="first">@Html.ActionLink("Разрешение на работу", "WorkPoland", "Home", new { area = "" }, new { })</li>
+                    <li>@Html.ActionLink("Предпринимательская деятельность", "WorkPoland", "Home", null, null, "Bisnes", null, null)</li>
+                     </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <footer style="height:20px;text-align:center;margin-top:10px;">
+            <p>ВСЕ ПРАВА ЗАЩИЩЕНЫ. ОФОРМЛЕНИЕ ВНЖ/ПМЖ В ПОЛЬШЕ. ОБРАЗОВАНИЕ. ПРЕДПРИНИМАТЕЛЬСТВО.</p>
         </footer>
+
     </div>
 
     @Scripts.Render("~/bundles/jquery")
