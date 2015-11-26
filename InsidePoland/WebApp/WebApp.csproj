@@ -154,6 +154,7 @@
     <Content Include="Views\Home\WorkPoland.cshtml" />
     <Content Include="Views\Home\WhyPoland.cshtml" />
     <Content Include="Views\Home\Contacts.cshtml" />
+    <None Include="Properties\PublishProfiles\fff.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
